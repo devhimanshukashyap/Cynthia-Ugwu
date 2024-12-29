@@ -10,6 +10,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    background-color: black;
 }
 
 body {
@@ -85,9 +86,9 @@ body {
 
     h4 {
         text-align: center;
-        padding: 5px;
+        padding: 10px;
         text-transform: uppercase;
-
+        
         &:hover {
             border-bottom: 1px solid white;
         }
@@ -121,4 +122,31 @@ span i {
     &:hover {
         color: wheat;
     }
+}
+
+#work-div {
+    height: 100vh;
+    padding: 60px 40px;
+    background-color: black;
+}
+
+.work {
+    height: 250px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 40px 0 40px 10px;
+    
+    h1 {
+        font-size: 6vw;
+        opacity: 0.6;
+        transition: all ease 0.7s;
+        text-transform: uppercase;
+    }
+}
+
+.work:hover h1{
+    transform: translateX(30px);
+    opacity: 0.2;
 }
